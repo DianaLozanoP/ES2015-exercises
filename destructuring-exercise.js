@@ -62,7 +62,13 @@ var obj = {
   var a = obj.numbers.a;
   var b = obj.numbers.b;
 /* Write an ES2015 Version */
-const {numbers : {a,b}}= obj
+const obj = {
+    numbers:  {
+        a:1,
+        b:2
+    }
+};
+const {a,b}= obj[numbers]
 
 //ES5 Array Swap
 var arr = [1, 2];
