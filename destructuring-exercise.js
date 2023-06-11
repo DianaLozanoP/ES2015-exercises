@@ -76,7 +76,7 @@ var temp = arr[0];
 arr[0] = arr[1];
 arr[1] = temp;
 //## **Object Destructuring 1**
-[1,2]=[2,1]
+[arr[0], arr[1]] =[arr[1],arr[0]]
 
 
 // ## **raceResults()**
@@ -94,11 +94,11 @@ arr[1] = temp;
 // - Destructuring
 // - `Enhanced` object assignment (same key/value shortcut)
 
-function raceResults(first, second, third, ...rest){
-    return {
-        [first]: first,
-        [second]: second,
-        [third]: third,
-        [rest]: rest
-    }
+function raceResults([first, second, third, ...rest]){
+    => ({
+        first,
+        second,
+        third,
+        rest
+    })
 }
