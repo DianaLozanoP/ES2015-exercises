@@ -70,3 +70,11 @@ function createAnimal (species, verb, noise) {
         }
     }
 }
+
+//SWAPPING VARIABLES
+let delicious = 'Mayonnaise'
+let disgusting = 'Whipped Cream'
+
+let temp = delicious;
+delicious = disgusting;
+disgusting = temp;
